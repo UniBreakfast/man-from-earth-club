@@ -1,0 +1,50 @@
+body {
+  font: 20px Trebuchet MS, sans-serif;
+  background-color: cornsilk;
+  color: #310;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+li {
+  filter: drop-shadow(0 0 1px orange);
+}
+
+hr {
+  border: 1px solid #4206;
+}
+
+[o] {
+  color: #420a;
+  translate: 20px; 
+  filter: drop-shadow(0 0 1px yellow);
+}
+
+dt {
+  filter: drop-shadow(0 0 5px cyan);
+}
+
+dd[o] {
+  margin-top: 10px;
+  filter: drop-shadow(0 0 1px lightgreen);
+}
+
+b {
+  transition: 500ms;
+}
+
+body:not(:has(b:hover)) b {
+  opacity: 0.3;
+}
+
+html:not(:has(>body>:hover)):hover b  {
+  font-size: 0;
+}
